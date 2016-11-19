@@ -32,7 +32,8 @@ wget -c http://apache.mirror.uber.com.au/tomcat/tomcat-7/v${VER}/bin/apache-tomc
 unzip apache-tomcat-${VER}.zip
 sudo cp -a apache-tomcat-${VER} /usr/local/
 
-export CATALINA_HOME=/usr/local/apache-tomcat-${VER}
+export 
+_HOME=/usr/local/apache-tomcat-${VER}
 cd /usr/local
 sudo ln -s $CATALINA_HOME tomcat
 cd $CATALINA_HOME/bin
