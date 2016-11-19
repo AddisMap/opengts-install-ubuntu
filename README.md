@@ -45,13 +45,9 @@ echo "export CATALINA_HOME=/usr/local/apache-tomcat-${VER}" >> ~/.bashrc
 ##### Java Connector
 Check the latest version at http://dev.mysql.com/downloads/connector/j/#downloads
 ```bash
-VER=5.1.34
-
-cd /tmp
-wget -c http://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-${VER}.zip
-unzip mysql-connector-java-${VER}.zip
-cd mysql-connector-java-${VER}
-sudo cp mysql-connector-java-${VER}-bin.jar $JAVA_HOME/jre/lib/ext
+cd $JAVA_HOME/jre/lib/ext
+ln -s /usr/share/java/mysql-connector-java.jar 
+ln -s /usr/share/java/mysql.jar
 ```
 
 ##### Java mail
